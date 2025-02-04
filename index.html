@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凉冰同学的主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2196F3;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0%;
+            margin: 0 auto;
+            display: block;
+        }
+        .profile-pic {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .play-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #2363b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>凉冰同学</h1>
+        <img src="girl.png" alt="凉冰同学的头像" class="profile-pic">
+        <p>哈喽大家好! 我叫凉冰，我励志要成为天才程序员，好好学习，在编程和短视频领域上有所成就。</p>
+
+        <h2>学习编程</h2>
+        <p>AI重塑了计算机的学习方式，所以对于我们这些刚入门的人来说，一定要充分利用AI。通过AI，我们可以更高效地学习编程知识，获取更多的学习资源，还能在实践中快速提升自己的编程能力。让我们一起加油吧！</p>
+
+        <button class="play-button" onclick="playMusic()">凉冰音乐</button>
+        <audio id="backgroundMusic" src="和熙的糖果风-北昼-403395903-128.mp3"></audio>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
